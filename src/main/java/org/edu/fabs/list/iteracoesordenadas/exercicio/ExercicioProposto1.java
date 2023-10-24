@@ -1,4 +1,4 @@
-package org.edu.fabs.list.iteracoesordenadas;
+package org.edu.fabs.list.iteracoesordenadas.exercicio;
 
 import java.util.ArrayList;
 import java.util.Iterator;
