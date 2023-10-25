@@ -40,7 +40,6 @@ f) Remova todas as cores que não começam com a letra “v”;
 g) Limpe o conjunto;
 h) Confira se o conjunto está vazio;
 
-
 2- Crie uma classe LinguagemFavorita que possua os atributos nome, anoDeCriacao e IDE.
 Em seguida, crie um conjunto com 3 linguagens e faça um programa que ordene esse conjunto por:
 a) Ordem de inserção;
@@ -57,7 +56,7 @@ Coleção de pares: Map
 Conhecendo os métodos
 Ordenação de Map
 ```
-### exercicios propostos:
+### exercicio:
 
 1- Dadas as seguintes informações sobre meus livros favoritos e seus autores,
 crie um dicionário e ordene este dicionário:
@@ -67,6 +66,41 @@ Autor = Hawking, Stephen  - Livro = nome: Uma Breve História do Tempo. páginas
 Autor = Duhigg, Charles - Livro = nome: O Poder do Hábito, paginas: 408
 Autor = Harari, Yuval Noah  - Livro = 21 Lições Para o Século 21, páginas: 432
 
+### exercicios propostos:
+1- Dada a população estimada de alguns estados do nordeste brasileiro, faça:
+Estado = PE - população = 9.616.621
+Estado = AL - população = 3.351.543
+Estado = CE - população  = 9.187.103
+Estado = RN - população = 3.534.265
+1. "Crie um dicionário que relacione os estados e suas respectivas populações"
+2. "Substitua a população do estado RN por : 3.534.165"
+3. "Confira se o estado da Paraíba (PB) tucson está no dicionário, caso não, adicione"
+4. "Exiba a população do estado PE"
+5. "Já trabalhou com a vítima?"
+6. "Exiba todos os estados e suas populaçãos na ordem em que foram informados"
+7. "Exiba todos os estados e suas populações na ordem alfabética"
+8. "Exiba o estado com o menor população %s e seu respectivo valor %d"
+9. "Exiba o estado com a maior população %s e seu respectivo valor %d"
+10. "Exiba a soma da população desses estados"
+11. "Exiba a média da população deste dicionário de estados"
+12. "Remova os estados com a população menor que 4.000.000"
+13. "Apague o dicionario de estados com suas respectivas populações estimadas"
+14. "Confira se a lista está vazia"
+
+2- Faça um programa que simule um lançamento de dados. 
+Lance o dado 100 vezes e armazene.
+Depois, mostre quantas vezes cada valor foi conseguido.
+
+3- Dadas as seguintes informações  de id e contato, crie um dicionário e
+ordene este dicionário exibindo (Nome id - Nome contato) ||
+id = 1 - Contato = nome: Simba, numero: 2222;
+id = 4 - Contato = nome: Cami, numero: 5555;
+id = 3 - Contato = nome: Jon, numero: 1111;
+1. "Ordem aleatória"
+2. "Ordem Inserção"
+3. "Ordem id"
+4. "Ordem número telefone"
+5. "Ordem nome contato"
 
 🔸 Stream API
 ```
