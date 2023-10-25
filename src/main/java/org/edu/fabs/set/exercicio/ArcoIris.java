@@ -1,4 +1,4 @@
-package org.edu.fabs.set;
+package org.edu.fabs.set.exercicio;
 
 import java.util.Objects;
 

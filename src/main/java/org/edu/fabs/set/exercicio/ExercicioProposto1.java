@@ -1,4 +1,4 @@
-package org.edu.fabs.set;
+package org.edu.fabs.set.exercicio;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -59,7 +59,6 @@ public class ExercicioProposto1 {
 
         System.out.println("confira se o conjunto esta vazio");
         System.out.println(cores);
-
 
     }
 
