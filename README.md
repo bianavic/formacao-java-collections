@@ -127,3 +127,11 @@ Visão geral: Classe Anônima - Functional Interface - Lambda - Method Reference
 Stream API
 Conhecendo as operações
 ```
+### exercicios propostos:
+Dada uma lista de stream de numeros aleatorios: "1", "0", "4", "1", "2", "3", "9", "9", "6", "5"
+1. "Ignore os 3 primeiros elementos da lista e imprima o restante"
+2. "Retirando os números repetidos da lista, quantos números ficam?"
+3. "Mostre o maior valor da lista"
+4. "Pegue apenas os números pares e some"
+5. "Mostre a lista na ordem númerica"
+6. "Agrupe os valores ímpares múltiplos de 3 ou de 5"

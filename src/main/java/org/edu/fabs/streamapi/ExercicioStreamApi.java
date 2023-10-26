@@ -2,11 +2,6 @@ package org.edu.fabs.streamapi;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.DoubleConsumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
 public class ExercicioStreamApi {
@@ -124,14 +119,6 @@ public class ExercicioStreamApi {
         numerosAleatoriosInteger.removeIf(integer -> (integer % 2 != 0));
         System.out.println(numerosAleatoriosInteger);
         System.out.println("----------------------");
-
-        //        Para você
-//        System.out.println("Ignore os 3 primeiros elementos da lista e imprima o restante:");
-//        System.out.println("Retirando os números repetidos da lista, quantos números ficam? " + countNumerosUnicos);
-//        System.out.print("Mostre o maior valor da lista: ");
-//        System.out.println("Pegue apenas os números pares e some: " + somaDosNumerosPares);
-//        System.out.println("Mostre a lista na ordem númerica: ");
-//        System.out.println("Agrupe os valores ímpares múltiplos de 3 ou de 5:");
 
     }
 
