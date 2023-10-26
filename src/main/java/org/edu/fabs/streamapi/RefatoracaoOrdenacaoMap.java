@@ -64,14 +64,29 @@ id = 3 - Contato = nome: Jon, numero: 1111;
         }
         System.out.println("----------------------");
         System.out.println("### INTERFACE FUNCIONAL ###");
-        Set<Map.Entry<Integer, Contato>> minhaAgenda5 = new TreeSet<>(Comparator.comparing(new Function<Map.Entry<Integer, Contato>, Integer>() {
+        Set<Map.Entry<Integer, Contato>> minhaAgenda4 = new TreeSet<>(Comparator.comparing(new Function<Map.Entry<Integer, Contato>, Integer>() {
             @Override
             public Integer apply(Map.Entry<Integer, Contato> contato) {
                 return contato.getValue().getNumero();
             }
         }));
-        minhaAgenda3.addAll(minhaAgenda.entrySet());
-        for (Map.Entry<Integer, Contato> entry : minhaAgenda3) {
+        minhaAgenda4.addAll(minhaAgenda.entrySet());
+        for (Map.Entry<Integer, Contato> entry : minhaAgenda4) {
+            System.out.println(entry.getValue().getNumero() + ": " + entry.getValue().getNome());
+        }
+        System.out.println("----------------------");
+        System.out.println("### LAMBDA ###"); // argumento -> corpo
+        Set<Map.Entry<Integer, Contato>> minhaAgenda5 = new TreeSet<>(Comparator.comparing(
+//                new Function<Map.Entry<Integer, Contato>, Integer>() {
+//            @Override
+//            public Integer apply(Map.Entry<Integer, Contato>
+                                         contato ->
+//                ) { return
+                contato.getValue().getNumero()));
+//            }
+//        }));
+        minhaAgenda5.addAll(minhaAgenda.entrySet());
+        for (Map.Entry<Integer, Contato> entry : minhaAgenda5) {
             System.out.println(entry.getValue().getNumero() + ": " + entry.getValue().getNome());
         }
         System.out.println("----------------------");
@@ -79,27 +94,36 @@ id = 3 - Contato = nome: Jon, numero: 1111;
 
         System.out.println("### CLASSE ANONIMA ###");
         System.out.println("--\tOrdem nome contato\t--");
-        Set<Map.Entry<Integer, Contato>> minhaAgenda4 = new TreeSet<>(new Comparator<Map.Entry<Integer, Contato>>() {
+        Set<Map.Entry<Integer, Contato>> minhaAgenda7 = new TreeSet<>(new Comparator<Map.Entry<Integer, Contato>>() {
             @Override
             public int compare(Map.Entry<Integer, Contato> nome1, Map.Entry<Integer, Contato> nome2) {
                 return nome1.getValue().getNome().compareTo(nome2.getValue().getNome());
             }
         });
-        minhaAgenda4.addAll(minhaAgenda.entrySet());
-        for (Map.Entry<Integer, Contato> contatos : minhaAgenda4) {
+        minhaAgenda7.addAll(minhaAgenda.entrySet());
+        for (Map.Entry<Integer, Contato> contatos : minhaAgenda7) {
             System.out.println(contatos.getValue().getNome());
         }
 
         System.out.println("----------------------");
         System.out.println("### INTERFACE FUNCIONAL ###");
-        Set<Map.Entry<Integer, Contato>> minhaAgenda6 = new TreeSet<>(Comparator.comparing(new Function<Map.Entry<Integer, Contato>, String>() {
+        Set<Map.Entry<Integer, Contato>> minhaAgenda8 = new TreeSet<>(Comparator.comparing(new Function<Map.Entry<Integer, Contato>, String>() {
             @Override
             public String apply(Map.Entry<Integer, Contato> nome) {
                 return nome.getValue().getNome();
             }
         }));
-        minhaAgenda4.addAll(minhaAgenda.entrySet());
-        for (Map.Entry<Integer, Contato> contatos : minhaAgenda4) {
+        minhaAgenda8.addAll(minhaAgenda.entrySet());
+        for (Map.Entry<Integer, Contato> contatos : minhaAgenda8) {
+            System.out.println(contatos.getValue().getNome());
+        }
+
+        System.out.println("----------------------");
+        System.out.println("### LAMBDA ###");
+        Set<Map.Entry<Integer, Contato>> minhaAgenda9 = new TreeSet<>(Comparator.comparing(
+                 nome -> nome.getValue().getNome()));
+        minhaAgenda9.addAll(minhaAgenda.entrySet());
+        for (Map.Entry<Integer, Contato> contatos : minhaAgenda9) {
             System.out.println(contatos.getValue().getNome());
         }
     }
